@@ -21,7 +21,7 @@ export default function HomePage() {
         <a className="login-link" href="/login">Entrar</a>
       </header>
 
-      <nav className="site-nav" aria-label="Navegação principal">
+      <nav className="site-nav" aria-label="Navegação principal"><a href="/catalogo">Todas as categorias</a>
         <a href="/legislacao">Legislação</a><a href="/editais">Editais</a><a href="/comunicados">Comunicados</a><a href="/jurisprudencia">Jurisprudência</a><a href="/hierarquia">Hierarquia</a>
       </nav>
 
@@ -29,7 +29,7 @@ export default function HomePage() {
         <p className="eyebrow gold">ORDEM • JUSTIÇA • RESPONSABILIDADE</p>
         <h1>Um espaço de organização para a simulação jurídica.</h1>
         <p className="intro">Documentos, editais, comunicados e informações institucionais da comunidade CJS em um só lugar.</p>
-        <div className="hero-actions">
+        <div className="hero-actions"><a className="button primary" href="/catalogo">Explorar por categoria</a>
           <a className="button primary" href="/legislacao">Consultar documentos</a>
           <a className="button secondary" href="/editais">Ver editais</a>
         </div>
