@@ -29,3 +29,5 @@ h1{font-size:clamp(38px,7vw,68px);line-height:1.06;letter-spacing:-1.5px;margin:
 footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-size:12px}
 @media(max-width:760px){.page{padding:18px}.hero{padding:56px 0 48px}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.card{padding:16px}.intro{font-size:15px}}
 @media(max-width:420px){.cards{grid-template-columns:1fr}.hero-actions .button{width:100%;text-align:center}}
+
+.subpage{min-height:75vh;padding-top:34px}.subpage h1{margin:22px 0}.back{display:inline-block;color:var(--muted);margin-bottom:36px}.status{display:inline-block;border:1px solid #526174;color:var(--muted);font-size:12px;padding:5px 8px;border-radius:20px}.small-note{color:var(--muted);font-size:13px;line-height:1.7;margin-top:22px}.panel{background:linear-gradient(145deg,#14263a,#0d1928);border:1px solid var(--line);border-radius:14px;padding:22px;margin:24px 0}.panel h2{font-size:23px}.panel ul{color:var(--muted);line-height:1.9;padding-left:22px}@media(max-width:760px){.subpage{padding:18px}.panel{padding:16px}}
