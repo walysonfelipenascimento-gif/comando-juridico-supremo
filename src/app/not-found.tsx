@@ -1,0 +1,1 @@
+export default function NotFound(){return <main className="subpage"><p className="eyebrow gold">CJS • PORTAL INSTITUCIONAL</p><h1>Página não encontrada</h1><p className="intro">O endereço pode estar incorreto ou a página ainda não estar disponível.</p><a className="button primary" href="/">Voltar ao início</a></main>}
