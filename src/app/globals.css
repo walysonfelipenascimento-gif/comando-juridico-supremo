@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+:root{color-scheme:dark;--navy:#081321;--panel:#101f31;--gold:#d6b36a;--text:#f5f3ee;--muted:#aab6c4;--line:#26374b}
+*{box-sizing:border-box}
+html{min-height:100%;background:var(--navy)}
+body{margin:0;background:radial-gradient(ellipse at top,#152b43 0%,var(--navy) 56%);color:var(--text);font-family:'DM Sans',sans-serif}
+a{color:inherit;text-decoration:none}
+.page{max-width:1120px;margin:0 auto;padding:24px}
+.topbar{display:flex;align-items:center;gap:14px;border-bottom:1px solid var(--line);padding:10px 0 22px}
+.brand-mark{display:grid;place-items:center;width:48px;height:48px;border:1px solid var(--gold);border-radius:12px;color:var(--gold);font-weight:700;letter-spacing:1px}
+.eyebrow{font-size:11px;letter-spacing:2px;font-weight:700;color:var(--muted);margin:0 0 8px}
+.gold{color:var(--gold)}
+.login-link{margin-left:auto;border:1px solid var(--line);border-radius:9px;padding:10px 16px}
+.hero{padding:76px 0 70px;max-width:780px}
+h1,h2{font-family:'Playfair Display',serif}
+h1{font-size:clamp(38px,7vw,68px);line-height:1.06;letter-spacing:-1.5px;margin:18px 0}
+.intro{color:var(--muted);font-size:17px;line-height:1.8;max-width:640px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.button{display:inline-block;padding:13px 18px;border-radius:9px;font-weight:700;font-size:14px}
+.primary{background:var(--gold);color:#101927}
+.secondary{border:1px solid #526174}
+.section{padding:20px 0 54px}
+.section-heading h2{font-size:32px;margin:0 0 24px}
+.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.card{background:linear-gradient(145deg,#14263a,#0d1928);border:1px solid var(--line);border-radius:14px;padding:22px;min-height:150px}
+.card h3{margin:0 0 12px;color:var(--gold);font-size:18px}
+.card p,.notice p{color:var(--muted);line-height:1.65;font-size:14px}
+.notice{border:1px solid #574a30;background:#211f1a;border-radius:12px;padding:20px;margin-bottom:44px}
+.notice strong{color:var(--gold)}
+footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-size:12px}
+@media(max-width:760px){.page{padding:18px}.hero{padding:56px 0 48px}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.card{padding:16px}.intro{font-size:15px}}
+@media(max-width:420px){.cards{grid-template-columns:1fr}.hero-actions .button{width:100%;text-align:center}}
