@@ -1,11 +1,18 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { createSupabaseBrowserClient } from "@/lib/supabase-browser";
 
 export default function LoginPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("error") === "oauth_callback") {
+      setError("O Discord retornou, mas o Supabase não concluiu o login. Verifique se o provedor Discord está ativado e se as URLs de redirecionamento estão corretas.");
+    }
+  }, []);
 
   async function loginWithDiscord() {
     setError("");
@@ -34,7 +41,7 @@ export default function LoginPage() {
       <button className="button primary" onClick={loginWithDiscord} disabled={loading}>
         {loading ? "Conectando…" : "Continuar com Discord"}
       </button>
-      {error && <p role="alert" className="small-note">{error} Confira se as variáveis do Supabase estão configuradas e se o provedor Discord está ativado.</p>}
+      {error && <p role="alert" className="small-note">{error} Confira também se as variáveis do Supabase estão configuradas.</p>}
     </section>
     <p className="small-note">Entrar não concede automaticamente cargo de Fundador, patente, departamento nem permissão administrativa. Essas autorizações devem ser validadas no servidor.</p>
   </main>;
